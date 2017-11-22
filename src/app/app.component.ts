@@ -51,7 +51,7 @@ export class AppComponent
 
   ngAfterViewInit() {
     this.log('ngAfterViewInit');
-    this.title = 'Angular component lifecycle. change 2';
+    setTimeout(() => { this.title = 'Angular component lifecycle. change 2'; });
   }
 
   ngAfterViewChecked() {
