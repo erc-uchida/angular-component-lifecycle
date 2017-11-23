@@ -19,6 +19,7 @@ export class AppComponent
   implements OnInit, OnChanges, OnDestroy, AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked, DoCheck {
 
   title = 'Angular component lifecycle.';
+  visibleChild2 = false;
 
   constructor() {
     this.log('constructor');
@@ -59,5 +60,10 @@ export class AppComponent
   log(msg) {
     console.log(`%c${msg}`, 'color: red');
     console.log(this.title);
+  }
+
+  onButtonClick() {
+    console.log('-- onButtonClick --');
+    this.visibleChild2 = !this.visibleChild2;
   }
 }
