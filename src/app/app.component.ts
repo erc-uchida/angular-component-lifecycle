@@ -34,7 +34,7 @@ export class AppComponent
 
   ngOnInit() {
     this.log('ngOnInit');
-    // this.title = 'Angular component lifecycle. change 1';
+    this.title = 'Angular component lifecycle. change 1';
   }
 
   ngOnDestroy() {
@@ -51,7 +51,7 @@ export class AppComponent
 
   ngAfterViewInit() {
     this.log('ngAfterViewInit');
-    // setTimeout(() => { this.title = 'Angular component lifecycle. change 2'; });
+    setTimeout(() => { this.title = 'Angular component lifecycle. change 2'; });
   }
 
   ngAfterViewChecked() {
@@ -60,6 +60,6 @@ export class AppComponent
 
   log(msg) {
     console.log(`%c${msg}`, 'color: red');
-    // console.log(this.title);
+    console.log(this.title);
   }
 }
