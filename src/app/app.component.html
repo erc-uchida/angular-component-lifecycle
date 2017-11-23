@@ -5,7 +5,7 @@
   </div>
 </div>
 <app-child></app-child>
-<app-child2 *ngIf="this.visibleChild2"></app-child2>
+<app-child2 [hidden]="!this.visibleChild2"></app-child2>
 <app-child3></app-child3>
 
 <div style="margin-top: 20px;">
