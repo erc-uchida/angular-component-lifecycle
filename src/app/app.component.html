@@ -1,12 +1,16 @@
 <div style="border: 1px solid #000000;padding: 3px;margin-bottom: 5px;">
   <div>{{this.title}}</div>
-  <div>
-    <button (click)="onButtonClick()">Child2 を表示</button>
-  </div>
+  <!--<div>-->
+    <!--<button (click)="onButtonClick()">Child2 を表示</button>-->
+  <!--</div>-->
 </div>
-<app-child></app-child>
-<app-child2 [hidden]="!this.visibleChild2"></app-child2>
-<app-child3></app-child3>
+<app-child>
+  <content>
+    <app-child3></app-child3>
+  </content>
+</app-child>
+<!--<app-child2 [hidden]="!this.visibleChild2"></app-child2>-->
+<!--<app-child3></app-child3>-->
 
 <div style="margin-top: 20px;">
   <p><span style="color: red;">赤</span>：app.component.ts</p>

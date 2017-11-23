@@ -34,6 +34,7 @@ export class Child3Component
 
   ngOnInit() {
     this.log('ngOnInit');
+    this.title = 'Child3 title changed.';
   }
 
   ngOnDestroy() {
