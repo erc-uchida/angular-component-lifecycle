@@ -34,7 +34,6 @@ export class ChildComponent
 
   ngOnInit() {
     this.log('ngOnInit');
-    this.title = 'Child component lifecycle. change 1';
   }
 
   ngOnDestroy() {
@@ -51,7 +50,6 @@ export class ChildComponent
 
   ngAfterViewInit() {
     this.log('ngAfterViewInit');
-    setTimeout(() => { this.title = 'Child component lifecycle. change 2'; });
   }
 
   ngAfterViewChecked() {

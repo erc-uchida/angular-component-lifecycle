@@ -11,14 +11,14 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-grand-child',
+  templateUrl: './grand-child.component.html',
+  styleUrls: ['./grand-child.component.css']
 })
-export class AppComponent
+export class GrandChildComponent
   implements OnInit, OnChanges, OnDestroy, AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked, DoCheck {
 
-  title = 'Angular component lifecycle.';
+  title = 'GrandChild component lifecycle.';
 
   constructor() {
     this.log('constructor');
@@ -57,7 +57,8 @@ export class AppComponent
   }
 
   log(msg) {
-    console.log(`%c${msg}`, 'color: red');
+    console.log(`%c${msg}`, 'color: orange');
     console.log(this.title);
   }
+
 }

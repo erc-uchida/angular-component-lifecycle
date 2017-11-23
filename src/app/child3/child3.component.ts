@@ -11,14 +11,14 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-child3',
+  templateUrl: './child3.component.html',
+  styleUrls: ['./child3.component.css']
 })
-export class AppComponent
+export class Child3Component
   implements OnInit, OnChanges, OnDestroy, AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked, DoCheck {
 
-  title = 'Angular component lifecycle.';
+  title = 'Child3 component lifecycle.';
 
   constructor() {
     this.log('constructor');
@@ -57,7 +57,8 @@ export class AppComponent
   }
 
   log(msg) {
-    console.log(`%c${msg}`, 'color: red');
+    console.log(`%c${msg}`, 'color: purple');
     console.log(this.title);
   }
+
 }
