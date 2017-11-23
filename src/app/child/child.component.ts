@@ -11,14 +11,14 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-child',
+  templateUrl: './child.component.html',
+  styleUrls: ['./child.component.css']
 })
-export class AppComponent
+export class ChildComponent
   implements OnInit, OnChanges, OnDestroy, AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked, DoCheck {
 
-  title = 'Angular component lifecycle.';
+  title = 'Child component lifecycle.';
 
   constructor() {
     this.log('constructor');
@@ -34,7 +34,7 @@ export class AppComponent
 
   ngOnInit() {
     this.log('ngOnInit');
-    // this.title = 'Angular component lifecycle. change 1';
+    // this.title = 'Child component lifecycle. change 1';
   }
 
   ngOnDestroy() {
@@ -51,7 +51,7 @@ export class AppComponent
 
   ngAfterViewInit() {
     this.log('ngAfterViewInit');
-    // setTimeout(() => { this.title = 'Angular component lifecycle. change 2'; });
+    // setTimeout(() => { this.title = 'Child component lifecycle. change 2'; });
   }
 
   ngAfterViewChecked() {
@@ -59,7 +59,8 @@ export class AppComponent
   }
 
   log(msg) {
-    console.log(`%c${msg}`, 'color: red');
+    console.log(`%c${msg}`, 'color: blue');
     // console.log(this.title);
   }
+
 }
