@@ -1,0 +1,27 @@
+<header>
+  <h2>お問い合わせフォーム</h2>
+</header>
+<section>
+  <form novalidate [formGroup]="this.form">
+    <app-input-text id="mailAddress"
+                    #mailAddress
+                    [label]="'メールアドレス'"
+                    formControlName="mailAddress"></app-input-text>
+    <app-dropdown id="kind"
+                  #kind
+                  [label]="'問い合わせ種別'"
+                  [options]="options$ | async"
+                  formControlName="kind"></app-dropdown>
+    <app-input-text id="title"
+                    #title
+                    [label]="'件名'"
+                    formControlName="title"></app-input-text>
+    <app-input-text id="description"
+                    #description
+                    [label]="'詳細'"
+                    formControlName="description"></app-input-text>
+    <app-button [id]="'send'" [name]="'送信'" (onButtonClick)="this.onButtonClick()"></app-button>
+    <app-button [id]="'done'" #btnDone [name]="'対応完了マークをつける'" (onButtonClick)="this.onDoneBtnClick()"></app-button>
+  </form>
+</section>
+<footer></footer>

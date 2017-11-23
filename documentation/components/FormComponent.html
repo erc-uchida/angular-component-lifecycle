@@ -1,0 +1,1746 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>component-lifecycle documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">component-lifecycle documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">component-lifecycle documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/ButtonComponent.html" >ButtonComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DropDownComponent.html" >DropDownComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/FormComponent.html"  data-type="entity-link" class="active" >FormComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/InputRadioComponent.html" >InputRadioComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/InputTextComponent.html" >InputTextComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/ListComponent.html" >ListComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/LoginComponent.html" >LoginComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/AppPage.html" >AppPage</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/AuthService.html" >AuthService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DataStoreService.html" >DataStoreService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/LoggerService.html" >LoggerService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="../interfaces/ContactForm.html" >ContactForm</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ListItem.html" >ListItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/User.html" >User</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/typealiases.html" data-type="entity-link" >Type aliases</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">component-lifecycle documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/ButtonComponent.html" >ButtonComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DropDownComponent.html" >DropDownComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/FormComponent.html"  data-type="entity-link" class="active" >FormComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/InputRadioComponent.html" >InputRadioComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/InputTextComponent.html" >InputTextComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/ListComponent.html" >ListComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/LoginComponent.html" >LoginComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/AppPage.html" >AppPage</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/AuthService.html" >AuthService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DataStoreService.html" >DataStoreService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/LoggerService.html" >LoggerService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="../interfaces/ContactForm.html" >ContactForm</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ListItem.html" >ListItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/User.html" >User</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/typealiases.html" data-type="entity-link" >Type aliases</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>FormComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+    </li>
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/form/form.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/docs/ts/latest/api/api/core/OnInit" target="_blank" >OnInit</a></code>
+                <code><a href="https://angular.io/docs/ts/latest/api/api/core/OnChanges" target="_blank" >OnChanges</a></code>
+                <code><a href="https://angular.io/docs/ts/latest/api/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+                <code><a href="https://angular.io/docs/ts/latest/api/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+                <code><a href="https://angular.io/docs/ts/latest/api/api/core/AfterViewChecked" target="_blank" >AfterViewChecked</a></code>
+                <code><a href="https://angular.io/docs/ts/latest/api/api/core/AfterContentInit" target="_blank" >AfterContentInit</a></code>
+                <code><a href="https://angular.io/docs/ts/latest/api/api/core/AfterContentChecked" target="_blank" >AfterContentChecked</a></code>
+                <code><a href="https://angular.io/docs/ts/latest/api/api/core/DoCheck" target="_blank" >DoCheck</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-form</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>form.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./form.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                 <a href="#btnDone">btnDone</a>
+                            </li>
+                            <li>
+                                 <a href="#componentName">componentName</a>
+                            </li>
+                            <li>
+                                 <a href="#description">description</a>
+                            </li>
+                            <li>
+                                 <a href="#editContactForm">editContactForm</a>
+                            </li>
+                            <li>
+                                 <a href="#form">form</a>
+                            </li>
+                            <li>
+                                 <a href="#kind">kind</a>
+                            </li>
+                            <li>
+                                 <a href="#logStyle">logStyle</a>
+                            </li>
+                            <li>
+                                 <a href="#mailAddress">mailAddress</a>
+                            </li>
+                            <li>
+                                 <a href="#options$">options$</a>
+                            </li>
+                            <li>
+                                 <a href="#subscriptions">subscriptions</a>
+                            </li>
+                            <li>
+                                 <a href="#title">title</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                 <a href="#ngAfterContentChecked">ngAfterContentChecked</a>
+                            </li>
+                            <li>
+                                 <a href="#ngAfterContentInit">ngAfterContentInit</a>
+                            </li>
+                            <li>
+                                 <a href="#ngAfterViewChecked">ngAfterViewChecked</a>
+                            </li>
+                            <li>
+                                 <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                 <a href="#ngDoCheck">ngDoCheck</a>
+                            </li>
+                            <li>
+                                 <a href="#ngOnChanges">ngOnChanges</a>
+                            </li>
+                            <li>
+                                 <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                 <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                 <a href="#onButtonClick">onButtonClick</a>
+                            </li>
+                            <li>
+                                 <a href="#onDoneBtnClick">onDoneBtnClick</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Private</span> <a href="#outputFormValue">outputFormValue</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Private</span> <a href="#sendContactForm">sendContactForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>constructor(auth: <a href="../injectables/AuthService.html">AuthService</a>, router: <a href="https://angular.io/docs/ts/latest/api/api/router/Router" target="_blank">Router</a>, formBuilder: <a href="https://angular.io/docs/ts/latest/api/api/forms/FormBuilder" target="_blank">FormBuilder</a>, dataStore: <a href="../injectables/DataStoreService.html">DataStoreService</a>, logger: <a href="../injectables/LoggerService.html">LoggerService</a>)</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/pages/form/form.component.ts:44</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div>
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>auth</td>
+                                                      <td>
+                                                                <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>router</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/docs/ts/latest/api/api/router/Router" target="_blank" >Router</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>formBuilder</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/docs/ts/latest/api/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>dataStore</td>
+                                                      <td>
+                                                                <code><a href="../injectables/DataStoreService.html" target="_self" >DataStoreService</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>logger</td>
+                                                      <td>
+                                                                <code><a href="../injectables/LoggerService.html" target="_self" >LoggerService</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+
+
+
+
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngAfterContentChecked"></a>
+                            <span class="name"><b> ngAfterContentChecked</b><a href="#ngAfterContentChecked"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngAfterContentChecked()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="106" class="link-to-prism">src/app/pages/form/form.component.ts:106</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngAfterContentInit"></a>
+                            <span class="name"><b> ngAfterContentInit</b><a href="#ngAfterContentInit"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngAfterContentInit()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/pages/form/form.component.ts:102</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngAfterViewChecked"></a>
+                            <span class="name"><b> ngAfterViewChecked</b><a href="#ngAfterViewChecked"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngAfterViewChecked()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="115" class="link-to-prism">src/app/pages/form/form.component.ts:115</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngAfterViewInit"></a>
+                            <span class="name"><b> ngAfterViewInit</b><a href="#ngAfterViewInit"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngAfterViewInit()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="110" class="link-to-prism">src/app/pages/form/form.component.ts:110</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngDoCheck"></a>
+                            <span class="name"><b> ngDoCheck</b><a href="#ngDoCheck"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngDoCheck()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/pages/form/form.component.ts:56</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngOnChanges"></a>
+                            <span class="name"><b> ngOnChanges</b><a href="#ngOnChanges"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngOnChanges()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/pages/form/form.component.ts:52</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngOnDestroy"></a>
+                            <span class="name"><b> ngOnDestroy</b><a href="#ngOnDestroy"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngOnDestroy()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="119" class="link-to-prism">src/app/pages/form/form.component.ts:119</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngOnInit"></a>
+                            <span class="name"><b> ngOnInit</b><a href="#ngOnInit"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngOnInit()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/pages/form/form.component.ts:60</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="onButtonClick"></a>
+                            <span class="name"><b> onButtonClick</b><a href="#onButtonClick"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>onButtonClick()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/app/pages/form/form.component.ts:126</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="onDoneBtnClick"></a>
+                            <span class="name"><b> onDoneBtnClick</b><a href="#onDoneBtnClick"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>onDoneBtnClick()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/app/pages/form/form.component.ts:144</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="outputFormValue"></a>
+                            <span class="name"><b><span class="modifier">Private</span> outputFormValue</b><a href="#outputFormValue"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-lock"></span>
+                            <code>outputFormValue()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="169" class="link-to-prism">src/app/pages/form/form.component.ts:169</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="sendContactForm"></a>
+                            <span class="name"><b><span class="modifier">Private</span> sendContactForm</b><a href="#sendContactForm"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-lock"></span>
+                            <code>sendContactForm(done: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/app/pages/form/form.component.ts:156</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>done</td>
+                                                      <td>
+                                                              <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        
+            <h3 id="inputs">
+                Properties
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="btnDone"></a>
+                            <span class="name"><b> btnDone</b><a href="#btnDone"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>btnDone:     <code><a href="../components/ButtonComponent.html" target="_self" >ButtonComponent</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="../components/ButtonComponent.html" target="_self" >ButtonComponent</a></code>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Decorators : </i><code>ViewChild</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/pages/form/form.component.ts:44</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="componentName"></a>
+                            <span class="name"><b> componentName</b><a href="#componentName"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>componentName:     <code></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>FormComponent</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/pages/form/form.component.ts:37</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="description"></a>
+                            <span class="name"><b> description</b><a href="#description"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>description:     <code><a href="../components/InputTextComponent.html" target="_self" >InputTextComponent</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="../components/InputTextComponent.html" target="_self" >InputTextComponent</a></code>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Decorators : </i><code>ViewChild</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/pages/form/form.component.ts:43</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="editContactForm"></a>
+                            <span class="name"><b> editContactForm</b><a href="#editContactForm"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>editContactForm:     <code><a href="../interfaces/ContactForm.html" target="_self" >ContactForm</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="../interfaces/ContactForm.html" target="_self" >ContactForm</a></code>
+    
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/pages/form/form.component.ts:34</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="form"></a>
+                            <span class="name"><b> form</b><a href="#form"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>form:     <code><a href="https://angular.io/docs/ts/latest/api/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="https://angular.io/docs/ts/latest/api/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+    
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/pages/form/form.component.ts:32</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="kind"></a>
+                            <span class="name"><b> kind</b><a href="#kind"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>kind:     <code><a href="../components/DropDownComponent.html" target="_self" >DropDownComponent</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="../components/DropDownComponent.html" target="_self" >DropDownComponent</a></code>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Decorators : </i><code>ViewChild</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/pages/form/form.component.ts:41</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="logStyle"></a>
+                            <span class="name"><b> logStyle</b><a href="#logStyle"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>logStyle:     <code></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>color: red</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/pages/form/form.component.ts:38</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="mailAddress"></a>
+                            <span class="name"><b> mailAddress</b><a href="#mailAddress"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>mailAddress:     <code><a href="../components/InputTextComponent.html" target="_self" >InputTextComponent</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="../components/InputTextComponent.html" target="_self" >InputTextComponent</a></code>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Decorators : </i><code>ViewChild</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/pages/form/form.component.ts:40</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="options$"></a>
+                            <span class="name"><b> options$</b><a href="#options$"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>options$:     <code>Observable&lt;[]&gt;</code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code>Observable&lt;[]&gt;</code>
+    
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/pages/form/form.component.ts:33</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="subscriptions"></a>
+                            <span class="name"><b> subscriptions</b><a href="#subscriptions"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>subscriptions:     <code>Subscription[]</code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code>Subscription[]</code>
+    
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/pages/form/form.component.ts:35</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="title"></a>
+                            <span class="name"><b> title</b><a href="#title"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>title:     <code><a href="../components/InputTextComponent.html" target="_self" >InputTextComponent</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="../components/InputTextComponent.html" target="_self" >InputTextComponent</a></code>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Decorators : </i><code>ViewChild</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/pages/form/form.component.ts:42</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+    </section>
+
+</div>
+
+
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre class="line-numbers"><code class="language-typescript">import {
+  AfterContentChecked,
+  AfterContentInit,
+  AfterViewChecked,
+  AfterViewInit,
+  Component,
+  DoCheck,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  ViewChild
+} from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup } from &#x27;@angular/forms&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { Observable } from &#x27;rxjs/Observable&#x27;;
+import { Subscription } from &#x27;rxjs/Subscription&#x27;;
+import { ButtonComponent } from &#x27;../../shared/components/button/button.component&#x27;;
+import { DropDownComponent, ListItem } from &#x27;../../shared/components/dropdown/dropdown.component&#x27;;
+import { InputTextComponent } from &#x27;../../shared/components/input-text/input-text.component&#x27;;
+import { AuthService } from &#x27;../../shared/services/auth/auth.service&#x27;;
+import { ContactForm, DataStoreService } from &#x27;../../shared/services/data-store/data-store.service&#x27;;
+import { LoggerService } from &#x27;../../shared/services/logger/logger.service&#x27;;
+
+@Component({
+  selector: &#x27;app-form&#x27;,
+  templateUrl: &#x27;./form.component.html&#x27;,
+  styleUrls: [&#x27;./form.component.css&#x27;]
+})
+export class FormComponent
+  implements OnInit, OnChanges, OnDestroy, AfterViewInit, AfterViewChecked, AfterContentInit, AfterContentChecked, DoCheck {
+
+  form: FormGroup;
+  options$: Observable&lt;ListItem[]&gt;;
+  editContactForm: ContactForm;
+  subscriptions: Subscription[] &#x3D; [];
+
+  componentName &#x3D; &#x27;FormComponent&#x27;;
+  logStyle &#x3D; &#x27;color: red&#x27;;
+
+  @ViewChild(&#x27;mailAddress&#x27;) mailAddress: InputTextComponent;
+  @ViewChild(&#x27;kind&#x27;) kind: DropDownComponent;
+  @ViewChild(&#x27;title&#x27;) title: InputTextComponent;
+  @ViewChild(&#x27;description&#x27;) description: InputTextComponent;
+  @ViewChild(&#x27;btnDone&#x27;) btnDone: ButtonComponent;
+
+  constructor(private auth: AuthService,
+              private router: Router,
+              private formBuilder: FormBuilder,
+              private dataStore: DataStoreService,
+              private logger: LoggerService) {}
+
+  ngOnChanges() {
+    this.logger.log(&#x60;${this.componentName} ngOnChanges&#x60;, this.logStyle);
+  }
+
+  ngDoCheck() {
+    this.logger.log(&#x60;${this.componentName} ngDoCheck&#x60;, this.logStyle);
+  }
+
+  ngOnInit() {
+    this.logger.log(&#x60;${this.componentName} ngOnInit&#x60;, this.logStyle);
+    if (!this.auth.loggedIn) {
+      this.router.navigate([&#x27;login&#x27;]);
+    }
+    // データを取ってくる
+    this.options$ &#x3D; this.dataStore.getKindOptions();
+    this.editContactForm &#x3D; this.dataStore.getEditContact();
+    this.btnDone.visible &#x3D; false;
+    // formの初期化
+    this.form &#x3D; this.formBuilder.group({
+      mailAddress: [&#x27;&#x27;],
+      kind: [&#x27;0&#x27;],
+      title: [&#x27;&#x27;],
+      description: [&#x27;&#x27;]
+    });
+    this.outputFormValue();
+    // 何かしらの条件で初期値を変更
+    if (this.editContactForm) {
+      this.form.setValue({
+        mailAddress: this.editContactForm.mailAddress,
+        kind: this.editContactForm.kind,
+        title: this.editContactForm.title,
+        description: this.editContactForm.description
+      });
+      this.outputFormValue();
+
+      // formの値に関係ないプロパティは変更可能
+      this.mailAddress.isDisabled &#x3D; true;
+      setTimeout(() &#x3D;&gt; {
+        this.outputFormValue();
+        if (this.kind.selectedValue &#x3D;&#x3D;&#x3D; &#x27;0&#x27;) {
+          // formの初期値を設定したあと、同じタイミングでvalueを変更することはできないためsetTimeoutで次の変更回へ持ち越し
+          this.mailAddress.value &#x3D; &#x27;&#x27;;
+          this.title.value &#x3D; &#x27;&#x27;;
+          this.description.value &#x3D; &#x27;&#x27;;
+        }
+      });
+      this.btnDone.visible &#x3D; true;
+    }
+  }
+
+  ngAfterContentInit() {
+    this.logger.log(&#x60;${this.componentName} ngAfterContentInit&#x60;, this.logStyle);
+  }
+
+  ngAfterContentChecked() {
+    this.logger.log(&#x60;${this.componentName} ngAfterContentChecked&#x60;, this.logStyle);
+  }
+
+  ngAfterViewInit() {
+    this.logger.log(&#x60;${this.componentName} ngAfterViewInit&#x60;, this.logStyle);
+    this.outputFormValue();
+  }
+
+  ngAfterViewChecked() {
+    this.logger.log(&#x60;${this.componentName} ngAfterViewChecked&#x60;, this.logStyle);
+  }
+
+  ngOnDestroy() {
+    this.logger.log(&#x60;${this.componentName} ngOnDestroy&#x60;, this.logStyle);
+    this.subscriptions.forEach(sub &#x3D;&gt; {
+      sub.unsubscribe();
+    });
+  }
+
+  onButtonClick() {
+    const send$ &#x3D; this.sendContactForm(false);
+    const sub &#x3D; send$.subscribe(res &#x3D;&gt; {
+      if (res) {
+        alert(&#x27;送信に成功しました。&#x27;);
+
+        // formをクリアします
+        this.form.setValue({
+          mailAddress: &#x27;&#x27;,
+          kind: &#x27;0&#x27;,
+          title: &#x27;&#x27;,
+          description: &#x27;&#x27;
+        });
+      }
+    });
+    this.subscriptions.push(sub);
+  }
+
+  onDoneBtnClick() {
+    if (!confirm(&#x27;このお問い合わせの対応を完了にしますか？&#x27;)) { return; }
+    const send$ &#x3D; this.sendContactForm(true);
+    const sub &#x3D; send$.subscribe(res &#x3D;&gt; {
+      if (res) {
+        alert(&#x27;完了にしました。&#x27;);
+        this.router.navigate([&#x27;list&#x27;]);
+      }
+    });
+    this.subscriptions.push(sub);
+  }
+
+  private sendContactForm(done: boolean): Observable&lt;boolean&gt; {
+    // 入力値を保存します
+    const inputValue: ContactForm &#x3D; {
+      id: (this.editContactForm) ? this.editContactForm.id : 0,
+      mailAddress: this.mailAddress.value,
+      kind: this.kind.selectedValue,
+      title: this.title.value,
+      description: this.description.value,
+      done: done
+    };
+    return this.dataStore.send(inputValue);
+  }
+
+  private outputFormValue() {
+    const style &#x3D; &#x27;background-color: lightgreen&#x27;;
+    this.logger.log(JSON.stringify(this.form.value), style);
+    this.logger.log(&#x60;this.mailAddress.value ${this.mailAddress.value}&#x60;, style);
+    this.logger.log(&#x60;this.kind.selectedValue ${this.kind.selectedValue}&#x60;, style);
+    this.logger.log(&#x60;this.title.value ${this.title.value}&#x60;, style);
+    this.logger.log(&#x60;this.description.value ${this.description.value}&#x60;, style);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;header&gt;
+  &lt;h2&gt;お問い合わせフォーム&lt;/h2&gt;
+&lt;/header&gt;
+&lt;section&gt;
+  &lt;form novalidate [formGroup]&#x3D;&quot;this.form&quot;&gt;
+    &lt;app-input-text id&#x3D;&quot;mailAddress&quot;
+                    #mailAddress
+                    [label]&#x3D;&quot;&#x27;メールアドレス&#x27;&quot;
+                    formControlName&#x3D;&quot;mailAddress&quot;&gt;&lt;/app-input-text&gt;
+    &lt;app-dropdown id&#x3D;&quot;kind&quot;
+                  #kind
+                  [label]&#x3D;&quot;&#x27;問い合わせ種別&#x27;&quot;
+                  [options]&#x3D;&quot;options$ | async&quot;
+                  formControlName&#x3D;&quot;kind&quot;&gt;&lt;/app-dropdown&gt;
+    &lt;app-input-text id&#x3D;&quot;title&quot;
+                    #title
+                    [label]&#x3D;&quot;&#x27;件名&#x27;&quot;
+                    formControlName&#x3D;&quot;title&quot;&gt;&lt;/app-input-text&gt;
+    &lt;app-input-text id&#x3D;&quot;description&quot;
+                    #description
+                    [label]&#x3D;&quot;&#x27;詳細&#x27;&quot;
+                    formControlName&#x3D;&quot;description&quot;&gt;&lt;/app-input-text&gt;
+    &lt;app-button [id]&#x3D;&quot;&#x27;send&#x27;&quot; [name]&#x3D;&quot;&#x27;送信&#x27;&quot; (onButtonClick)&#x3D;&quot;this.onButtonClick()&quot;&gt;&lt;/app-button&gt;
+    &lt;app-button [id]&#x3D;&quot;&#x27;done&#x27;&quot; #btnDone [name]&#x3D;&quot;&#x27;対応完了マークをつける&#x27;&quot; (onButtonClick)&#x3D;&quot;this.onDoneBtnClick()&quot;&gt;&lt;/app-button&gt;
+  &lt;/form&gt;
+&lt;/section&gt;
+&lt;footer&gt;&lt;/footer&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><header>  <h2>お問い合わせフォーム</h2></header><section>  <form novalidate [formGroup]="this.form">    <app-input-text id="mailAddress"                    #mailAddress                    [label]="\'メールアドレス\'"                    formControlName="mailAddress"></app-input-text>    <app-dropdown id="kind"                  #kind                  [label]="\'問い合わせ種別\'"                  [options]="options$ | async"                  formControlName="kind"></app-dropdown>    <app-input-text id="title"                    #title                    [label]="\'件名\'"                    formControlName="title"></app-input-text>    <app-input-text id="description"                    #description                    [label]="\'詳細\'"                    formControlName="description"></app-input-text>    <app-button [id]="\'send\'" [name]="\'送信\'" (onButtonClick)="this.onButtonClick()"></app-button>    <app-button [id]="\'done\'" #btnDone [name]="\'対応完了マークをつける\'" (onButtonClick)="this.onDoneBtnClick()"></app-button>  </form></section><footer></footer></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ButtonComponent', 'selector': 'app-button'},{'name': 'DropDownComponent', 'selector': 'app-dropdown'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'InputRadioComponent', 'selector': 'app-input-radio'},{'name': 'InputTextComponent', 'selector': 'app-input-text'},{'name': 'ListComponent', 'selector': 'app-list'},{'name': 'LoginComponent', 'selector': 'app-login'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'FormComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>

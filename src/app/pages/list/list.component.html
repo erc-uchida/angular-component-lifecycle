@@ -1,0 +1,36 @@
+<header>
+  <h2>お問い合わせ履歴一覧</h2>
+</header>
+<section>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <td></td>
+        <td>ID</td>
+        <td>メールアドレス</td>
+        <td>問い合わせ種別</td>
+        <td>件名</td>
+        <td>詳細</td>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let row of rows$ | async">
+        <tr>
+          <td><app-input-radio [id]="'selection' + row.id" [name]="'select-contact'" [visible]="!row.done"
+                               [value]="row.id" (onChecked)="onRadioSelected($event)"></app-input-radio></td>
+          <td>{{row.id}}</td>
+          <td>{{row.mailAddress}}</td>
+          <td>{{findKindNameByValue(row.kind)}}</td>
+          <td>{{row.title}}</td>
+          <td>{{row.description}}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</section>
+<section>
+  <app-button [id]="'edit'" [name]="'選択行編集'" [isDisabled]="selectedValue === 0" (onButtonClick)="onClickEdit()"></app-button>
+</section>
+<footer>
+
+</footer>

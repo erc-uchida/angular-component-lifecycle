@@ -1,0 +1,8 @@
+<ng-container *ngIf="visible">
+  <button type="button"
+          class="btn btn-default"
+          [disabled]="disabled || isDisabled"
+          (click)="this.onClick()">
+    {{this.name}}
+  </button>
+</ng-container>

@@ -1,0 +1,10 @@
+<div class="form-group">
+  <label [attr.for]="id">{{label}}</label>
+  <input class="form-control"
+         placeholder="入力してください。"
+         [disabled]="isDisabled"
+         [attr.id]="id"
+         [attr.type]="type ? type : 'text'"
+         [value]="value"
+         (change)="onValueChanged($event.target.value)">
+</div>

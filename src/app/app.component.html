@@ -1,22 +1,26 @@
-<div style="border: 1px solid #000000;padding: 3px;margin-bottom: 5px;">
-  <div>{{this.title}}</div>
-  <!--<div>-->
-    <!--<button (click)="onButtonClick()">Child2 を表示</button>-->
-  <!--</div>-->
+<div class="container">
+  <header class="row">
+    <div class="col-md-12">
+      <h1>お問い合わせ履歴管理システム</h1>
+      <p class="description">このシステムはお問い合わせの送信、及び、送信履歴を管理するシステムです。</p>
+    </div>
+  </header>
+  <nav class="row">
+    <div class="col-md-12">
+      <ul>
+        <li><a routerLink="/list">お問い合わせ履歴一覧</a></li>
+        <li><a routerLink="/form">お問い合わせフォーム</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+  <footer class="row footer">
+    <div class="col-md-12">
+      <p>© 2017 XXX Corp.</p>
+    </div>
+  </footer>
 </div>
-<app-child>
-  <content>
-    <app-child3></app-child3>
-  </content>
-</app-child>
-<!--<app-child2 [hidden]="!this.visibleChild2"></app-child2>-->
-<!--<app-child3></app-child3>-->
-
-<div style="margin-top: 20px;">
-  <p><span style="color: red;">赤</span>：app.component.ts</p>
-  <p><span style="color: blue;">青</span>：child.component.ts</p>
-  <p><span style="color: green;">緑</span>：child2.component.ts</p>
-  <p><span style="color: purple;">紫</span>：child3.component.ts</p>
-  <p><span style="color: orange;">オレンジ</span>：grand-child.component.ts</p>
-</div>
-

@@ -1,0 +1,12 @@
+<div class="form-group">
+  <p><label>{{label}}</label></p>
+  <select [attr.id]="id" class="form-control" (change)="onValueChanged($event)">
+    <ng-container *ngIf="options && options.length > 0">
+      <ng-container *ngFor="let option of options">
+        <option [ngValue]="option.value" [selected]="selectedValue === option.value">
+          {{option.name}}
+        </option>
+      </ng-container>
+    </ng-container>
+  </select>
+</div>

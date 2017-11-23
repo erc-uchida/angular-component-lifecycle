@@ -1,24 +1,47 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ChildComponent } from './child/child.component';
-import { Child2Component } from './child2/child2.component';
-import { Child3Component } from './child3/child3.component';
-import { GrandChildComponent } from './child/grand-child/grand-child.component';
+import { FormComponent } from './pages/form/form.component';
+import { ListComponent } from './pages/list/list.component';
+import { ButtonComponent } from './shared/components/button/button.component';
+import { DropDownComponent } from './shared/components/dropdown/dropdown.component';
+import { InputRadioComponent } from './shared/components/input-radio/input-radio.component';
+import { InputTextComponent } from './shared/components/input-text/input-text.component';
+import { DataStoreService } from './shared/services/data-store/data-store.service';
+import { AuthService } from './shared/services/auth/auth.service';
+import { LoginComponent } from './pages/login/login.component';
+import { LoggerService } from './shared/services/logger/logger.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent,
-    Child2Component,
-    Child3Component,
-    GrandChildComponent
+    ListComponent,
+    FormComponent,
+    InputTextComponent,
+    DropDownComponent,
+    ButtonComponent,
+    InputRadioComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent},
+      {path: 'list', component: ListComponent},
+      {path: 'form', component: FormComponent}
+    ]),
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    DataStoreService,
+    LoggerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -1,0 +1,10 @@
+<div *ngIf="visible" class="radio">
+  <label>
+    <input type="radio"
+           [attr.id]="id"
+           [attr.name]="name"
+           [value]="value"
+           [checked]="selectedValue"
+           (change)="onValueChanged($event.target.checked)">
+  </label>
+</div>

@@ -1,0 +1,18 @@
+<header>
+  <h2>ログイン</h2>
+</header>
+<section>
+  <form novalidate [formGroup]="this.form">
+    <app-input-text id="id"
+                    #id
+                    [label]="'ID'"
+                    formControlName="id"></app-input-text>
+    <app-input-text id="password"
+                    #password
+                    [label]="'パスワード'"
+                    [type]="'password'"
+                    formControlName="password"></app-input-text>
+    <app-button [id]="'login'" [name]="'ログイン'" (onButtonClick)="onLogin()"></app-button>
+    <p>※このままログインボタンを押して下さい</p>
+  </form>
+</section>
