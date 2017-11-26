@@ -9,10 +9,17 @@ import { DataStoreService } from '../../shared/services/data-store/data-store.se
 import { LoggerService } from '../../shared/services/logger/logger.service';
 
 import { FormComponent } from './form.component';
+import { DebugElement } from '@angular/core';
+import { By } from '@angular/platform-browser';
 
 describe('FormComponent', () => {
   let component: FormComponent;
   let fixture: ComponentFixture<FormComponent>;
+
+  let mailAddress: DebugElement;
+  let kind: DebugElement;
+  let title: DebugElement;
+  let description: DebugElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -48,9 +55,22 @@ describe('FormComponent', () => {
     fixture = TestBed.createComponent(FormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+
+    mailAddress = fixture.debugElement.query(By.css('#mailAddress'));
+    kind = fixture.debugElement.query(By.css('#kind'));
+    title = fixture.debugElement.query(By.css('#title'));
+    description = fixture.debugElement.query(By.css('#description'));
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('新規登録初期表示時の各コンポーネントの状態が正しいこと', () => {
+    expect(mailAddress.context.value).toBe('');
+    expect(kind.context.selectedValue).toBe('0');
+    expect(title.context.value).toBe('');
+    expect(description.context.value).toBe('');
+  });
+
 });
