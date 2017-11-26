@@ -66,11 +66,17 @@ describe('FormComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('新規登録初期表示時の各コンポーネントの状態が正しいこと', () => {
-    expect(mailAddress.context.value).toBe('');
-    expect(kind.context.selectedValue).toBe('0');
-    expect(title.context.value).toBe('');
-    expect(description.context.value).toBe('');
+  it('新規登録初期表示時の各コンポーネントの状態が正しいこと', (done: DoneFn) => {
+    fixture.whenStable().then(() => {
+      fixture.detectChanges();
+
+      expect(mailAddress.context.value).toBe('');
+      expect(kind.context.selectedValue).toBe('0');
+      expect(title.context.value).toBe('');
+      expect(description.context.value).toBe('');
+      done();
+    });
+
   });
 
 });
