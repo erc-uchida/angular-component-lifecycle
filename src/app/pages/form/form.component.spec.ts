@@ -36,6 +36,15 @@ describe('FormComponent', () => {
   }));
 
   beforeEach(() => {
+    // 依存サービスの状態を画面表示時の前提状態に変更する
+    const authService = TestBed.get(AuthService);
+    authService.loggedIn = true;
+    authService.loggedInUser = {
+      id: '1',
+      name: 'Admin',
+      role: 'Admin'
+    };
+
     fixture = TestBed.createComponent(FormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
