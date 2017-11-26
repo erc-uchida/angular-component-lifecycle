@@ -62,7 +62,7 @@ export class DataStoreService {
     }
   }
 
-  private searchHistory(searchId: number): ContactForm {
+  searchHistory(searchId: number): ContactForm {
     return this.contactHistories.find(history => {
       return history.id === searchId;
     });

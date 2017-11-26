@@ -20,6 +20,7 @@ describe('FormComponent', () => {
   let kind: DebugElement;
   let title: DebugElement;
   let description: DebugElement;
+  let send: DebugElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -60,6 +61,7 @@ describe('FormComponent', () => {
     kind = fixture.debugElement.query(By.css('#kind'));
     title = fixture.debugElement.query(By.css('#title'));
     description = fixture.debugElement.query(By.css('#description'));
+    send = fixture.debugElement.query(By.css('#send'));
   });
 
   it('should create', () => {
@@ -76,7 +78,50 @@ describe('FormComponent', () => {
       expect(description.context.value).toBe('');
       done();
     });
+  });
 
+  it('データソースのバインド項目が正しいこと', (done: DoneFn) => {
+    const expectedDataSource = [
+      {name: 'お選び下さい', value: '0'},
+      {name: '改善要望', value: '1'},
+      {name: 'バグ報告', value: '2'},
+      {name: 'その他', value: '3'}
+    ];
+
+    fixture.whenStable().then(() => {
+      fixture.detectChanges();
+
+      expect(JSON.stringify(kind.context.options)).toBe(JSON.stringify(expectedDataSource));
+      done();
+    });
+  });
+
+  it('各項目を入力し、送信ボタン押下で入力データが保存されること', (done: DoneFn) => {
+    // 各項目を入力
+    mailAddress.context.value = 'mailAddress';
+    kind.context.selectedValue = '1';
+    title.context.value = 'title';
+    description.context.value = 'description';
+
+    // 送信ボタン押下
+    send.triggerEventHandler('click', {});
+
+    fixture.whenStable().then(() => {
+      // 非同期での反映を待って、HTMLを更新
+      fixture.detectChanges();
+
+      const expectedRegisterdContactHistory = {
+        id: 1,
+        mailAddress: 'mailAddress',
+        kind: '1',
+        title: 'title',
+        description: 'description',
+        done: false
+      };
+      const dataStoreService = TestBed.get(DataStoreService);
+      expect(JSON.stringify(dataStoreService.searchHistory(1))).toBe(JSON.stringify(expectedRegisterdContactHistory));
+      done();
+    });
   });
 
 });

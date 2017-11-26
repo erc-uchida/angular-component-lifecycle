@@ -1,6 +1,7 @@
 <ng-container *ngIf="visible">
   <button type="button"
           class="btn btn-default"
+          [id]="id"
           [disabled]="disabled || isDisabled"
           (click)="this.onClick()">
     {{this.name}}
